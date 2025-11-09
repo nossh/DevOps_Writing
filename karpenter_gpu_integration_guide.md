@@ -4,7 +4,7 @@
 
 ---
 
-## 🧰 Prerequisites
+## Prerequisites
 - An existing EKS cluster (or Kubernetes cluster) with Karpenter installed.
 - Karpenter properly configured (IAM, EC2 permissions, discovery tags).
 - IAM roles allowing GPU instance types.
@@ -12,7 +12,7 @@
 
 ---
 
-## 🚀 Quick Summary
+## Quick Summary
 1. Allow GPU instance types in Karpenter.
 2. Deploy NVIDIA device plugin.
 3. Create a pod that requests a GPU.
@@ -21,7 +21,7 @@
 
 ---
 
-## 🧩 Step-by-Step Setup
+## Step-by-Step Setup
 
 ### 1️⃣ Allow GPU Instance Types in Karpenter
 
@@ -143,7 +143,7 @@ Expected: GPU info displayed (e.g., driver, memory, CUDA cores).
 
 ---
 
-## 🩻 Troubleshooting
+## Troubleshooting
 
 | Issue | Check |
 |-------|--------|
@@ -154,7 +154,7 @@ Expected: GPU info displayed (e.g., driver, memory, CUDA cores).
 
 ---
 
-## 🧠 Best Practices
+## Best Practices
 
 - Use **taints/tolerations** to isolate GPU workloads.  
 - Keep **dedicated NodePools** for GPUs.  
@@ -165,7 +165,7 @@ Expected: GPU info displayed (e.g., driver, memory, CUDA cores).
 
 ---
 
-## ✅ Final Checklist
+## Final Checklist
 
 - [ ] Karpenter IAM roles correct  
 - [ ] GPU families allowed in NodePool  
@@ -176,7 +176,3 @@ Expected: GPU info displayed (e.g., driver, memory, CUDA cores).
 
 ---
 
-## 🧩 Next Steps
-- Deploy full GPU Operator for production.
-- Add autoscaling policies based on GPU utilization.
-- Configure Spot fallback for cost optimization.
